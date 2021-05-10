@@ -7,7 +7,6 @@ var app = express();
 //DSV
 // var port = 3000;
 // app.use(morgan('dev'));
-
 //PRD
 app.use(morgan('prd'));
 
@@ -31,5 +30,5 @@ app.use('/PauloAlmeida', routes);
 // app.listen(port);
 // console.log("Running app on port port. Visit: http://localhost:" + port + "/");
 //PRD
-app.listen(process.env.PORT, () => console.log(`Express started at ${configurations.host}`));
+app.listen(process.env.PORT, () => console.log(`Express started`));
 
